@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* Tamanhos de fonte */
+    --font-size-xs: 16px;     /* Extra pequeno */
+    --font-size-sm: 20px;     /* Pequeno */
+    --font-size-md: 24px;     /* Médio */
+    --font-size-lg: 38px;     /* Grande */
+    --font-size-xl: 48px;     /* Extra grande */
+
+    /* Pesos de fonte */
+    --font-weight-bold: bold;
+
+    /* Cores de fundo */
+    --bg-color-default: #FFFFFF;
+    --bg-color-card: #E6F7FF;
+    --bg-color-header: #1890FF;
+    --bg-color-error: #f8d7da;
+
+    /* Cores de texto */
+    --text-color-default: #000000;
+    --text-color-light: #FFFFFF;
+    --text-color-muted: #7E7E7E;
+    --text-color-placeholder: #BFBFBF;
+    --text-color-error: #721c24;
+
+    /* Cores adicionais */
+    --color-primary: #007bff;
+    --color-secondary: #0056b3;
+    --color-error-border: #f5c6cb;
+    --color-shadow-light: rgba(0, 0, 0, 0.1);
+
+    /* Espaçamentos */
+    --spacing-xs: 10px;
+    --spacing-sm: 20px;
+
+    /* Outros */
+    --border-radius: 5px;
+    --transition: color 0.3s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--bg-color-default);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.mb20 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.mt20{
+    margin-top: var(--spacing-xs);
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.active-link {
+    font-weight: var(--font-weight-bold);
+}

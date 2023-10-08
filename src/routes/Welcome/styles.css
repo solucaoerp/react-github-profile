@@ -1,0 +1,13 @@
+.welcome-container {
+    padding-left: 41px;
+}
+
+.welcome-title {
+    font-size: var(--font-size-xl);
+    color: var(--text-color-default);
+}
+
+.welcome-subtitle {
+    font-size: var(--font-size-md);
+    color: var(--text-color-muted);
+}

@@ -1,6 +1,22 @@
 .btn {
-    border: none;
+    width: 101px;
+    height: 40px;
+    border-radius: var(--border-radius);
     background-color: var(--bg-color-header);
     color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    margin-top: var(--spacing-md);
+    transition: background-color var(--transition);
+    font-size: var(--font-size-xs);
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn:active {
+    background-color: var(--color-primary);
 }

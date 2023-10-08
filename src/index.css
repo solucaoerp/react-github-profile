@@ -33,6 +33,7 @@
     /* Espaçamentos */
     --spacing-xs: 10px;
     --spacing-sm: 20px;
+    --spacing-md: 30px;
 
     /* Outros */
     --border-radius: 5px;
@@ -76,6 +77,14 @@ button {
 
 .mb20 {
     margin-bottom: var(--spacing-xs);
+}
+
+.mb30{
+    margin-bottom: var(--spacing-md);
+}
+
+.mt30{
+    margin-top: var(--spacing-md);
 }
 
 .mt20{

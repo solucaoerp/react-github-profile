@@ -1,5 +1,6 @@
-import { ErrorData } from '../../models/profileGithub';
 import './styles.css';
+
+import { ErrorData } from '../../models/profileGithub';
 
 interface RequestErrorAlertProps {
     errorData: ErrorData;
@@ -9,7 +10,7 @@ export default function RequestErrorAlert({ errorData }: RequestErrorAlertProps)
     const { message, documentation_url } = errorData;
 
     return (
-        <div className="request-error-container container">
+        <div className="request-error-container">
             <div className="request-error-general-title">Erro ao buscar usuário</div>
             <div className="request-error-context">Mensagem do servidor:</div>
             <div className="request-error-title">{message}</div>

@@ -1,3 +1,5 @@
+import './styles.css';
+
 import { ProfileData } from "../../../models/profileGithub";
 
 interface ProfileDetailsProps {
@@ -6,16 +8,14 @@ interface ProfileDetailsProps {
 
 export default function ProfileDetails({ data }: ProfileDetailsProps) {
     return (
-        <div className="container">
-            <div>
-                <img src={data.avatar_url} alt={data.login} />
-            </div>
-            <div>
-                <h3>Informações</h3>
-                <div>Perfil: {data.html_url}</div>
-                <div>Seguidores: {data.followers}</div>
-                <div>Localidade: {data.location}</div>
-                <div>Nome: {data.name}</div>
+        <div className="profile-details-container">
+            <img src={data.avatar_url} alt={data.login} />
+            <div className="profile-info-container">
+                <h3 className="info-title">Informações</h3>
+                <div className="info-item"><span className="label-bold">Perfil:</span> <span className="label-url">{data.html_url}</span></div>
+                <div className="info-item"><span className="label-bold">Seguidores:</span> {data.followers}</div>
+                <div className="info-item"><span className="label-bold">Localidade:</span> {data.location}</div>
+                <div className="info-item"><span className="label-bold">Nome:</span> {data.name}</div>
             </div>
         </div>
     );

@@ -1,3 +1,5 @@
+import './styles.css';
+
 import { useState, useEffect } from 'react';
 
 import ButtonPrimary from "../../../components/ButtonPrimary";
@@ -36,10 +38,11 @@ export default function ProfileSearch() {
     }, [shouldFetch, username]);
 
     return (
-        <>
-            <div className="container">
-                <h1>Encontre um perfil Github</h1>
+        <div className="profile-search-container">
+            <div className="profile-search-card">
+                <h1 className="profile-search-title">Encontre um perfil Github</h1>
                 <input
+                    className="profile-search-input"
                     type="text"
                     placeholder="Usuário Github"
                     value={username}
@@ -47,9 +50,14 @@ export default function ProfileSearch() {
                 />
                 <ButtonPrimary buttonDescription="Encontrar" onClick={() => setShouldFetch(true)} />
             </div>
-
-            {profileData && <ProfileDetails data={profileData} />}
+    
+            {profileData && (
+                <div className="result-card">
+                    <ProfileDetails data={profileData} />
+                </div>
+            )}
+    
             {errorData && <RequestErrorAlert errorData={errorData} />}
-        </>
-    );
+        </div>
+    );    
 }

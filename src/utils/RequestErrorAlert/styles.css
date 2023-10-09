@@ -1,6 +1,6 @@
 .request-error-container {
     width: 1251px;
-    background-color: #fff1f1;
+    background-color: var(--bg-color-error-alert);
     border: 1px solid var(--color-error-border);
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
@@ -12,10 +12,10 @@
 }
 
 .request-error-general-title {
-    color: #262626;
+    color: var(--text-color-error-alert);
     font-size: 38px;
     font-weight: 500;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid var(--border-color-error-alert);
     padding-bottom: 8px;
 }
 
@@ -24,7 +24,7 @@
     font-size: var(--font-size-md);
     margin: 0;
     padding: 0;
-    color: #262626;
+    color: var(--text-color-error-alert);
 }
 
 .request-error-title {

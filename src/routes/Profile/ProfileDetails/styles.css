@@ -3,7 +3,7 @@
     width: 1251px;
     height: 334px;
     border-radius: 8px;
-    background-color: #F5F5F5;
+    background-color: var(--bg-color-details);
     gap: 29px;
     align-items: center;
     padding: 43px 35px 44px 38px;
@@ -18,11 +18,11 @@
     width: 902px;
     height: 247px;
     border-radius: 6px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--border-color-details);
     padding: 8px 16px 17px 14px;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color: var(--bg-color-default);
 }
 
 .info-title {
@@ -36,13 +36,13 @@
 .info-item {
     height: 40px;
     border-radius: 4px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--border-color-details);
     padding: 0 var(--spacing-xs);
     font-size: var(--font-size-xs);
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-    color: #737373;
+    color: var(--text-color-muted-details);
 }
 
 /* Removendo a margem do último elemento para evitar espaçamento extra */
@@ -56,5 +56,5 @@
 }
 
 .label-url {
-    color: #0029FF;
+    color: var(--text-color-link);
 }

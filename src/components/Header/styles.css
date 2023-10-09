@@ -10,3 +10,27 @@
     color: var(--text-color-light);
     font-size: var(--font-size-md);
 }
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 768px) {
+    .header-container {
+        padding-left: 20px; /* Reduzindo o padding */
+        height: 50px; /* Ajustando a altura */
+    }
+
+    .header-title {
+        font-size: var(--font-size-sm); /* Reduzindo o tamanho da fonte */
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+    .header-container {
+        padding-left: 10px; /* Reduzindo ainda mais o padding */
+        height: 40px; /* Ajustando a altura */
+    }
+
+    .header-title {
+        font-size: var(--font-size-xs); /* Reduzindo ainda mais o tamanho da fonte */
+    }
+}

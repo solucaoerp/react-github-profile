@@ -28,7 +28,7 @@
 .info-title {
     height: 28px;
     color: var(--bg-color-header);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     font-weight: 500;
     margin-bottom: 19px;
 }

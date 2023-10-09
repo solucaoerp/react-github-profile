@@ -10,4 +10,5 @@
 .welcome-subtitle {
     font-size: var(--font-size-md);
     color: var(--text-color-muted);
+    margin-bottom: 27px;
 }

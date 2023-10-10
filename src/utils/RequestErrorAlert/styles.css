@@ -1,5 +1,6 @@
 .request-error-container {
     width: 1251px;
+    max-width: 95%; /* Adicionando max-width para se adaptar a dispositivos menores */
     background-color: var(--bg-color-error-alert);
     border: 1px solid var(--color-error-border);
     padding: var(--spacing-md);
@@ -13,7 +14,7 @@
 
 .request-error-general-title {
     color: var(--text-color-error-alert);
-    font-size: 38px;
+    font-size: var(--font-size-lg);
     font-weight: 500;
     border-bottom: 1px solid var(--border-color-error-alert);
     padding-bottom: 8px;
@@ -40,4 +41,58 @@
 
 .request-error-container a:hover {
     color: var(--color-secondary);
+}
+
+.link-text {
+    display: inline;
+}
+
+.link-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+/* Estilos para tablets e dispositivos de tamanho médio */
+@media (max-width: 768px) {
+    .request-error-general-title {
+        font-size: var(--font-size-md);
+    }
+
+    .request-error-context,
+    .request-error-title {
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .request-error-general-title {
+        font-size: var(--font-size-sm);
+        text-align: center;
+    }
+
+    .request-error-context,
+    .request-error-title {
+        font-size: var(--font-size-xs);
+        text-align: center;
+    }
+
+    .request-error-container a {
+        display: block;
+        text-align: center;
+    }
+
+    .link-text {
+        display: none;
+    }
+
+    .link-icon {
+        display: inline;
+    }
+
+    .documentation-link {
+        text-align: center;
+    }
 }

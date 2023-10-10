@@ -1,6 +1,6 @@
 .request-error-container {
     width: 1251px;
-    max-width: 95%; /* Adicionando max-width para se adaptar a dispositivos menores */
+    max-width: 95%;
     background-color: var(--bg-color-error-alert);
     border: 1px solid var(--color-error-border);
     padding: var(--spacing-md);

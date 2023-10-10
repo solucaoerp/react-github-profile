@@ -17,26 +17,26 @@
 /* Estilos para tablets e dispositivos de tamanho médio */
 @media (max-width: 768px) {
     .welcome-title {
-        font-size: var(--font-size-lg); /* Reduzindo o tamanho da fonte */
+        font-size: var(--font-size-lg);
     }
 
     .welcome-subtitle {
-        font-size: var(--font-size-sm); /* Reduzindo o tamanho da fonte */
+        font-size: var(--font-size-sm);
     }
 }
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
     .welcome-container {
-        padding-left: 20px; /* Reduzindo o padding */
+        padding-left: 20px;
     }
 
     .welcome-title {
-        font-size: var(--font-size-md); /* Reduzindo ainda mais o tamanho da fonte */
+        font-size: var(--font-size-md);
     }
 
     .welcome-subtitle {
-        font-size: var(--font-size-xs); /* Reduzindo ainda mais o tamanho da fonte */
-        margin-bottom: 15px; /* Ajustando o espaçamento */
+        font-size: var(--font-size-xs);
+        margin-bottom: 15px;
     }
 }

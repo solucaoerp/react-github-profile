@@ -14,23 +14,23 @@
 /* Responsividade para tablets e dispositivos menores */
 @media (max-width: 768px) {
     .header-container {
-        padding-left: 20px; /* Reduzindo o padding */
-        height: 50px; /* Ajustando a altura */
+        padding-left: 20px;
+        height: 50px;
     }
 
     .header-title {
-        font-size: var(--font-size-sm); /* Reduzindo o tamanho da fonte */
+        font-size: var(--font-size-sm);
     }
 }
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 480px) {
     .header-container {
-        padding-left: 10px; /* Reduzindo ainda mais o padding */
-        height: 40px; /* Ajustando a altura */
+        padding-left: 10px;
+        height: 40px;
     }
 
     .header-title {
-        font-size: var(--font-size-xs); /* Reduzindo ainda mais o tamanho da fonte */
+        font-size: var(--font-size-xs);
     }
 }

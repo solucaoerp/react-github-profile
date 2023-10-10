@@ -1,6 +1,6 @@
 # Desafio: Github API
 
-Este projeto é resultado de um desafio que envolve a integração e consumo de dados `Github API`. Foi desenvolvido com as tecnologias [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/) e [Axios](https://axios-http.com/ptbr/docs/intro), e exemplifica a construção de aplicações frontend robustas e eficientes. Este trabalho é parte integrante do programa de treinamento **ReactJS Professional** da [DevSuperior](https://devsuperior.com.br/). Através dele, buscamos consolidar conhecimentos essenciais em Componentes, Rotas e na realização de requisições HTTP com Axios.
+Este projeto é o resultado de um desafio que envolve a integração e consumo de dados `Github API`. Foi desenvolvido com as tecnologias [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/) e [Axios](https://axios-http.com/ptbr/docs/intro), exemplificando o desenvolvimento de aplicações frontend robustas e eficientes. Este trabalho é parte integrante do programa de treinamento **ReactJS Professional** da escola [DevSuperior](https://devsuperior.com.br/). Através dele, buscamos consolidar conhecimentos essenciais em `Componentes`, `Rotas` e na realização de `requisições HTTP com Axios`.
 
 ## 📸 Imagens do Projeto
 
@@ -50,17 +50,56 @@ Para garantir a integridade e a segurança dos dados ao trabalhar com TypeScript
 
 Este tipo representa os dados do perfil do usuário que esperamos receber da API do Github quando a requisição é bem-sucedida.
 
+Github API: `https://api.github.com/users`
+
 ```typescript
 export type ProfileData = {
     avatar_url: string;
     login: string;
-
-
     html_url: string;
     followers: number;
     location: string;
     name: string;
 };
+```
+
+O tipo `ProfileData` foi feito baseado no retorno abaixo:
+
+```json
+{
+  "login": "solucaoerp",
+  "id": 15080123,
+  "node_id": "MDQ6VXNlcjE1MDgwMTIz",
+  "avatar_url": "https://avatars.githubusercontent.com/u/15080123?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/solucaoerp",
+  "html_url": "https://github.com/solucaoerp",
+  "followers_url": "https://api.github.com/users/solucaoerp/followers",
+  "following_url": "https://api.github.com/users/solucaoerp/following{/other_user}",
+  "gists_url": "https://api.github.com/users/solucaoerp/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/solucaoerp/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/solucaoerp/subscriptions",
+  "organizations_url": "https://api.github.com/users/solucaoerp/orgs",
+  "repos_url": "https://api.github.com/users/solucaoerp/repos",
+  "events_url": "https://api.github.com/users/solucaoerp/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/solucaoerp/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "Charles Borges",
+  "company": null,
+  "blog": "",
+  "location": "Fortaleza",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 18,
+  "public_gists": 0,
+  "followers": 6,
+  "following": 16,
+  "created_at": "2015-10-11T22:33:15Z",
+  "updated_at": "2023-09-27T23:08:55Z"
+}
 ```
 
 ### Tipo de Dados para Respostas Negativas:
@@ -72,6 +111,15 @@ export type ErrorData = {
     message: string;
     documentation_url: string;
 };
+```
+
+O tipo `ErrorData` foi feito baseado no retorno abaixo:
+
+```json
+{
+  "message": "Not Found",
+  "documentation_url": "https://docs.github.com/rest/users/users#get-a-user"
+}
 ```
 
 ## 📜 Trechos de Código

@@ -1,12 +1,14 @@
 .profile-details-container {
     display: flex;
-    width: 1251px;
-    height: 334px;
+    width: 100%;
+    max-width: 1251px;
+    height: auto;
     border-radius: 8px;
     background-color: var(--bg-color-details);
     gap: 29px;
     align-items: center;
     padding: 43px 35px 44px 38px;
+    flex-wrap: wrap;
 }
 
 .profile-details-container img {
@@ -28,7 +30,7 @@
 .info-title {
     height: 28px;
     color: var(--bg-color-header);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     font-weight: 500;
     margin-bottom: 19px;
 }
@@ -57,4 +59,39 @@
 
 .label-url {
     color: var(--text-color-link);
+}
+
+/* Estilos para tablets e dispositivos de tamanho médio */
+@media (max-width: 768px) {
+    .profile-details-container {
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-sm);
+    }
+
+    .profile-details-container img {
+        width: 90%;
+        height: auto;
+    }
+
+    .profile-info-container {
+        width: 100%;
+        padding: var(--spacing-xs);
+    }
+
+    .info-title,
+    .info-item {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    .profile-details-container {
+        padding: var(--spacing-xs);
+    }
+
+    .info-title {
+        text-align: center;
+    }
 }

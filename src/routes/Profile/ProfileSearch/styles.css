@@ -8,20 +8,20 @@
 .profile-search-card {
     background-color: var(--bg-color-card);
     width: 1251px;
-    max-width: 95%; /* Adicionando max-width para se adaptar a dispositivos menores */
+    max-width: 95%;
     height: 270px;
     border-radius: 16px;
     padding: var(--spacing-sm);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Mantendo o alinhamento original */
+    align-items: flex-start;
 }
 
 .profile-search-title {
     font-size: var(--font-size-lg);
     font-weight: 500;
-    text-align: left; /* Mantendo o alinhamento original */
+    text-align: left;
     color: var(--text-color-dark);
     margin-bottom: 12px;
 }
@@ -30,13 +30,13 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
-    align-items: flex-start; /* Mantendo o alinhamento original */
-    width: 100%; /* Ajustando a largura para 100% */
+    align-items: flex-start;
+    width: 100%;
 }
 
 .profile-search-input {
     width: 298px;
-    max-width: 90%; /* Adicionando max-width para se adaptar a dispositivos menores */
+    max-width: 90%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--text-color-muted);
@@ -48,33 +48,53 @@
     margin-bottom: 24px;
 }
 
+.result-card {
+    width: 1251px;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: 10px;
+}
+
 /* Estilos para tablets e dispositivos de tamanho médio */
 @media (max-width: 768px) {
     .profile-search-title {
-        font-size: var(--font-size-md); /* Reduzindo o tamanho da fonte */
+        font-size: var(--font-size-md);
     }
 
     .profile-search-input {
-        font-size: var(--font-size-xs); /* Reduzindo o tamanho da fonte */
+        font-size: var(--font-size-xs);
+    }
+
+    .result-card {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 480px) {
     .profile-search-card {
-        align-items: center; /* Centralizando o conteúdo em dispositivos móveis */
+        align-items: center;
     }
 
     .profile-search-title {
-        font-size: var(--font-size-sm); /* Reduzindo ainda mais o tamanho da fonte */
-        text-align: center; /* Centralizando o título em dispositivos móveis */
+        font-size: var(--font-size-sm);
+        text-align: center;
     }
 
     .profile-search-input-container {
-        align-items: center; /* Centralizando o input em dispositivos móveis */
+        align-items: center;
     }
 
     .profile-search-input {
-        font-size: var(--font-size-xs); /* Reduzindo ainda mais o tamanho da fonte */
+        font-size: var(--font-size-xs);
+    }
+
+    .result-card {
+        align-items: center;
+        margin-bottom: 10px;
     }
 }

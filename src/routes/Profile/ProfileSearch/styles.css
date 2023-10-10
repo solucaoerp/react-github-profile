@@ -44,7 +44,7 @@
     font-size: var(--font-size-xs);
     outline: none;
     transition: border-color var(--transition);
-    color: var(--text-color-default);
+    color: var(--text-color-input-search);
     margin-bottom: 24px;
 }
 
